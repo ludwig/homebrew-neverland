@@ -3,7 +3,7 @@ class PanUtils < Formula
   homepage "https://github.com/ludwig/pan-utils.git"
   #url "https://github.com/ludwig/pan-utils/archive/v0.1.0.tar.gz"
   #sha256 "b1b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3"
-  head "git@yappa:scratch/pan-utils.git", :using => :git
+  head "git@yappa:scratch/pan-utils.git", :using => :git, :branch => "main"
   license "null"
 
   def install
