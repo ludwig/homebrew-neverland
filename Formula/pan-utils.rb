@@ -3,12 +3,11 @@ class PanUtils < Formula
   homepage "https://github.com/ludwig/pan-utils.git"
   #url "https://github.com/ludwig/pan-utils/archive/v0.1.0.tar.gz"
   #sha256 "b1b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3b3"
-  head "https://github.com/ludwig/pan-utils.git", :branch => "main"
+  head "git@yappa:scratch/pan-utils.git", :using => :git
   license "null"
 
   def install
-    system "git", "clone", "git@yappa:scratch/pan-utils.git", "pan-utils"
-    bin.install Dir["pan-utils/bin/*"]
+    bin.install Dir["bin/*"]
   end
 
   def caveats
